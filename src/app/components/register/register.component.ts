@@ -25,13 +25,13 @@ export class RegisterComponent implements OnInit {
       Validators.minLength(8),
       Validators.maxLength(32)
     ]),
-    gender: new FormControl('', [
+    gender: new FormControl('Male', [
       Validators.required
     ])
   })
 
   showInfo() {
-    console.log(this.registerForm.value);
+    console.log(this.registerForm);
   }
 
 }
